@@ -1,0 +1,51 @@
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geospatial Reasoner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Geospatial Reasoner with Google Earth Engine</h1>
+    <div id="map">{{ map_html | safe }}</div>
+    <div id="controls">
+        <button onclick="loadData('elevation')">Show Elevation</button>
+        <button onclick="loadData('landcover')">Show Land Cover</button>
+        <button onclick="loadData('flood_risk')">Map Flood Risk</button>
+        <button onclick="loadData('site_suitability')">Assess Site Suitability</button>
+        <button onclick="loadData('land_cover_monitoring')">Monitor Land Cover</button>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geospatial Reasoner</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Geospatial Reasoner with Google Earth Engine</h1>
+    <div id="map">{{ map_html | safe }}</div>
+    <div id="legend"></div>
+    <div id="controls">
+        <button onclick="loadData('landsat')">Load Landsat Imagery</button>
+        <button onclick="loadData('ndvi')">Compute NDVI</button>
+        <button onclick="loadData('elevation')">Show Elevation</button>
+        <button onclick="loadData('landcover')">Show Land Cover</button>
+        <button onclick="loadData('flood_risk')">Map Flood Risk</button>
+        <button onclick="loadData('site_suitability')">Assess Site Suitability</button>
+        <button onclick="loadData('land_cover_monitoring')">Monitor Land Cover</button>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
